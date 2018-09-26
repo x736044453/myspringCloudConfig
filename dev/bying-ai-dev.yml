@@ -1,3 +1,34 @@
 cyy:
   name: chenyong
   age: 21
+  
+spring:
+  datasource:
+    url: jdbc:mysql://111.230.137.157:3366/baiying?useUnicode=true&characterEncoding=utf-8
+    username: baiying
+    password: Admin_654321
+    driverClassName: com.mysql.jdbc.Driver
+    max-active: 10
+    max-idle: 2
+    min-idle: 1
+    initial-size: 2
+  jpa:
+    database: MYSQL
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  redis:
+    database: 0
+    host: 118.89.45.153
+    port: 6379
+    password: ICDADMINwujing86
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 5000
+idworker:
+  workerid: 1
+  datacenterid: 1
